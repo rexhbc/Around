@@ -291,6 +291,5 @@ func saveToGCS(ctx context.Context, r io.Reader, bucket, name string) (*storage.
 	attrs, err := obj.Attrs(ctx)
 	fmt.Printf("Post is saved to GCS: %s\n", attrs.MediaLink)
 	return obj, attrs, err
-
 }
 
